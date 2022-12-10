@@ -24,30 +24,30 @@ Data.groupby(['source_id'])['engagement_reaction_count'].sum()
 #Drop a column
 Data = Data.drop('engagement_comment_plugin_count', axis = 1)
 
-#Create Function
-def thisfunction():
-    print('My first attempt at function')
-thisfunction()
+# #Create Function
+# def thisfunction():
+#     print('My first attempt at function')
+# thisfunction()
 
-#Create Function with variables
-def aboutme(name,surname,location):
-    print('This is '+name+' my surname is '+surname+' i am from '+location)
-    return name,surname,location
+# #Create Function with variables
+# def aboutme(name,surname,location):
+#     print('This is '+name+' my surname is '+surname+' i am from '+location)
+#     return name,surname,location
 
-a = aboutme('lexy', 'ayo', 'saskatoon')
+# a = aboutme('lexy', 'ayo', 'saskatoon')
 
 
-#Create Function with loops
-def favfood(food):
-    for x in food:
-        print('My top food is '+x)
+# #Create Function with loops
+# def favfood(food):
+#     for x in food:
+#         print('My top food is '+x)
         
-fastfood = ['Burgers', 'Pizzas', 'Pie', 'Salad', 'Water', 'Fruit']
+# fastfood = ['Burgers', 'Pizzas', 'Pie', 'Salad', 'Water', 'Fruit']
 
-favfood(fastfood)
+# favfood(fastfood)
 
 #Create a keyword Flag
-Keyword ='crash'
+#Keyword ='crash'
 #Create For loop to isolate each title
 # lenght = len(Data)
 # Keyword_flag = []
@@ -99,7 +99,7 @@ title_neu_sentiment = []
 
 Lenght = len(Data)
 
-for x in range (0,lenght):
+for x in range (0,Lenght):
     try:
         text = Data['title'][x]
         sent_int = SentimentIntensityAnalyzer()
